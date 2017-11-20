@@ -6,5 +6,10 @@ Carthage/
 Pods/
 .rubygems/
 bin/
-build/
+
 .gradle/
+build/
+gradlew.bat
+
+.idea/
+
