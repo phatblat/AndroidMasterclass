@@ -38,6 +38,8 @@
         android:inputType="textPersonName"
         android:hint="Enter message here"
         app:layout_constraintBottom_toTopOf="@+id/message"
-        tools:layout_editor_absoluteX="85dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
 
 </android.support.constraint.ConstraintLayout>
