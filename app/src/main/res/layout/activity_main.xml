@@ -29,19 +29,6 @@
         />
 
     <EditText
-        android:id="@+id/userHeight"
-        android:hint="Enter Height"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/title"
-        app:layout_constraintBottom_toTopOf="@+id/userWeight"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        />
-
-    <EditText
         android:id="@+id/userWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -50,7 +37,20 @@
         android:ems="10"
         android:hint="Enter Weight"
         android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/userHeight"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintBottom_toTopOf="@+id/userHeight"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/userHeight"
+        android:hint="Enter Height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/userWeight"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -67,7 +67,8 @@
         app:layout_constraintTop_toBottomOf="@+id/userHeight"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteX="127dp" />
+        android:onClick="buttonClicked"
+        />
 
     <TextView
         android:id="@+id/userBMI"
