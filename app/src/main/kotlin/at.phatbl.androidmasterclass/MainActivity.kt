@@ -1,5 +1,6 @@
 package at.phatbl.androidmasterclass
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.PersistableBundle
@@ -54,24 +55,7 @@ class MainActivity : AppCompatActivity() {
 
     @Suppress("UNUSED_PARAMETER")
     fun buttonClicked(view: View) {
-        val editTextWeight = findViewById<EditText>(R.id.userWeight)
-        val editTextHeight = findViewById<EditText>(R.id.userHeight)
-
-        val weight = editTextWeight.text.toString().toDouble()
-        val height = editTextHeight.text.toString().toDouble()
-        val bmi = calculateBMI(weight = weight, height = height)
-
-        val textViewResult = findViewById<TextView>(R.id.userBMI)
-        textViewResult.text = bmi.toString()
-    }
-
-    /**
-     * w/h^2
-     * @param weight Weight of the user, in kilograms.
-     * @param height Height of the user, in centimeters.
-     * @return BMI of the user.
-     */
-    fun calculateBMI(weight: Double, height: Double): Double {
-        return weight / (height * height)
+        val intent = Intent(this, SecondActivity::class.java)
+        startActivity(intent)
     }
 }
