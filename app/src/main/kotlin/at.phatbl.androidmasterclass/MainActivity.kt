@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.os.PersistableBundle
 import android.util.Log
 import android.view.View
-import android.widget.EditText
+import android.widget.Button
 import android.widget.TextView
 
 /**
@@ -21,6 +21,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Log.i(TAG, "onCreate")
+
+        val button = findViewById<Button>(R.id.button)
+        button.setOnClickListener { v: View ->
+            val textView = findViewById<TextView>(R.id.textView)
+            textView.text = "Button Clicked"
+        }
     }
 
     override fun onStart() {
