@@ -52,7 +52,8 @@ class MainActivity : AppCompatActivity() {
         Log.i(TAG, "onSaveInstanceState")
     }
 
-    fun buttonClicked() {
+    @Suppress("UNUSED_PARAMETER")
+    fun buttonClicked(view: View) {
         val editTextWeight = findViewById<EditText>(R.id.userWeight)
         val editTextHeight = findViewById<EditText>(R.id.userHeight)
 
