@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun buttonClicked(view: View) {
+    fun buttonClicked() {
         val editTextWeight = findViewById<EditText>(R.id.userWeight)
         val editTextHeight = findViewById<EditText>(R.id.userHeight)
 
