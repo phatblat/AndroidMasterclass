@@ -5,13 +5,14 @@ package at.phatbl.androidmasterclass
  */
 data class Food(
         val name: String,
-        val description: String
+        val description: String,
+        val imageID: Int
 ) {
     companion object {
         val foods = arrayOf(
-                Food("Pizza", "Thin crust pizza with extra cheese"),
-                Food("Burger", "Veg burger with healthy stuff"),
-                Food("Sandwich", "Whole wheat sandwich")
+                Food("Pizza", "Thin crust pizza with extra cheese", R.drawable.pizza),
+                Food("Burger", "Veg burger with healthy stuff", R.drawable.burger),
+                Food("Sandwich", "Whole wheat sandwich", R.drawable.sandwich)
         )
     }
 }
