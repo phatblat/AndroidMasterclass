@@ -6,7 +6,8 @@ import android.accounts.AuthenticatorDescription
  * Created by ben on 11/27/17.
  */
 data class Menu(
-        val name: String, val description: String
+        val name: String,
+        val description: String
 ) {
     companion object {
         val menus: Array<Menu> = arrayOf(
