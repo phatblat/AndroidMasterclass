@@ -1,7 +1,5 @@
 package at.phatbl.mydemofragment
 
-import android.accounts.AuthenticatorDescription
-
 /**
  * Created by ben on 11/27/17.
  */
